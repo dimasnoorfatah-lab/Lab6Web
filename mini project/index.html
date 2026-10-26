@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pendaftaran Workshop</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <h1>Pendaftaran Workshop</h1>
+
+    <form id="formDaftar" novalidate>
+      <label for="nama">Nama</label>
+      <input type="text" id="nama">
+      <p class="error" id="errNama"></p>
+
+      <label for="email">Email</label>
+      <input type="email" id="email">
+      <p class="error" id="errEmail"></p>
+
+      <label for="sesi">Sesi</label>
+      <select id="sesi">
+        <option value="">Pilih sesi</option>
+        <option value="Sesi 1 (09.00)">Sesi 1 (09.00)</option>
+        <option value="Sesi 2 (13.00)">Sesi 2 (13.00)</option>
+      </select>
+      <p class="error" id="errSesi"></p>
+
+      <label for="catatan">Catatan (opsional)</label>
+      <textarea id="catatan" rows="3" maxlength="100"></textarea>
+      <p class="counter" id="counter">0 / 100 karakter</p>
+
+      <button type="submit">Daftar</button>
+      <button type="button" id="btnReset" class="sekunder">Reset</button>
+
+      <p class="sukses" id="sukses" hidden></p>
+    </form>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
